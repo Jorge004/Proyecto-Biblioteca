@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Libros</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url("registro.jpg") center/cover no-repeat;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4fd1ef;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #047af0;
+        }
+    </style>
+</head>
+<body>
+<div>
+<h1>Registro de Libros</h1>
+
+<form action="registrar-libro.php" method="post">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required><br><br>
+
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" name="autor" required><br><br>
+
+    <label for="genero">Género:</label>
+    <input type="text" id="genero" name="genero"><br><br>
+
+    <button type="submit">Registrar Libro</button><br><br>
+</form>
+<form action="catalogo-libros.php" method="post">
+    <button type="submit">Volver</button>
+</div>
+</body>
+</html>
